@@ -36,7 +36,7 @@ This public repository contains the writeup, portfolio notebook and project phot
 
 ## Reading the work
 
-Start with `project.ipynb` or the linked portfolio. To reproduce the original SQL workflows, an Oracle environment and the matching original schema are required; MongoDB tasks additionally require an appropriate MongoDB collection. The notebook is an overview and does not connect to a live production database.
+Start with the code links above, `project.ipynb` or the linked portfolio. To reproduce the original SQL workflows, an Oracle environment and the matching original schema are required; MongoDB tasks additionally require an appropriate MongoDB collection. The notebook is an overview and does not connect to a live production database. These excerpts are not a standalone database installer: the base CUSTOMER, TRUCK, TRAILER and COMBINATION tables and matching test records are required. The JSON export uses the quote status column added by schema-evolution.sql. Its trailing commas require assembling the output into a valid JSON array before import. The MongoDB excerpt expects customer 1001 to exist and replaces its entire quotes array; it does not append a quote or calculate totals automatically. No Oracle or MongoDB execution was performed for this publication update.
 
 ## Design considerations
 
@@ -45,3 +45,4 @@ Use foreign keys and constraints to protect relationships before building aggreg
 
 ---
 Chloe Shuqing Xu · [GitHub](https://github.com/xushuqing0575)
+

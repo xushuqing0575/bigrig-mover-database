@@ -1,7 +1,7 @@
 -- Selected portfolio excerpt from T4-brm-mods.sql
 -- Chloe Shuqing Xu. Requires the matching Oracle project schema.
 
---4(a)
+
 ALTER TABLE quote ADD(
     quote_assigned_job CHAR(1) DEFAULT 'N' NOT NULL,
     quote_unassigned_reason VARCHAR2(100)
@@ -31,7 +31,7 @@ FROM quote
 ORDER BY quote_no;
 
 
---4(b)
+
 CREATE TABLE service(
     service_no NUMBER(5) NOT NULL,
     truck_vin CHAR(17) NOT NULL,

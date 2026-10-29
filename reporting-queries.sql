@@ -1,7 +1,7 @@
 -- Selected portfolio excerpt from T5-brm-select.sql
 -- Chloe Shuqing Xu. Requires the matching Oracle project schema.
 
-/* (a) */
+
 SELECT
     c.cust_no,
     CASE 
@@ -40,7 +40,7 @@ ORDER BY
     c.cust_no;
 
 
-/* (b) */
+
 SELECT
     e.emp_no,
     CASE
@@ -99,7 +99,7 @@ ORDER BY
     e.emp_no;
 
 
-/* (c) */
+
 SELECT 
     co.truck_vin,
     rpad(t.truck_rego,10, ' ') AS truck_rego,
